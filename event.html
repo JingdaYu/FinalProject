@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 Junior Ranger Program Application | City of Boulder Volunteer | Accessible Recode</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- EXTRA CREDIT: skip navigation link — WCAG 2.4.1 -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="logo" href="index.html">City of Boulder Volunteer</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="event.html" aria-current="page">Opportunities</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><button type="button" class="lang-btn" aria-label="Switch language | English">EN ▾</button></li>
+        <li><button type="button" class="btn-join">Join</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index.html">City of Boulder</a></li>
+    <!-- Intermediate levels exist on the live site but are outside this
+         three-page recode, so they are rendered as plain text rather than
+         as several adjacent links all pointing at the same placeholder
+         (which WAVE would flag as redundant links). -->
+    <li><span class="crumb-static">Open Space &amp; Mountain Parks</span></li>
+    <li><span class="crumb-static">Junior Ranger Program</span></li>
+    <li><span class="crumb-static">Internships</span></li>
+    <li aria-current="page">2026 Junior Ranger Program Application</li>
+  </ol>
+</nav>
+
+<main id="main-content" tabindex="-1">
+  <img class="cover" src="img/trail-work.svg"
+       alt="Cover image for 2026 Junior Ranger Program Application: a trail crew below the mountains">
+  <h1>2026 Junior Ranger Program Application</h1>
+  <p>
+    <span class="status-line">Application Closed</span>
+    <!-- Status is communicated visually AND programmatically, as on the
+         original site (a PASS item we preserved): the disabled control is
+         aria-disabled and removed from the tab order. -->
+    <button type="button" class="btn-primary btn-disabled" aria-disabled="true" tabindex="-1">Register</button>
+    <button type="button" class="btn-primary" aria-describedby="impact-hint">Log Volunteer Hours</button>
+  </p>
+  <!-- Usability fix: "Add Impact" (platform jargon) is relabelled in plain
+       language, with the GivePulse term kept as supplementary text. -->
+  <p class="hint" id="impact-hint">Called "Add Impact" on GivePulse: record hours you have already served.</p>
+
+  <div class="layout">
+    <div>
+      <section class="block" aria-labelledby="h-about">
+        <h2 id="h-about">About</h2>
+        <p>Junior Rangers complete trail maintenance, forestry, and invasive
+           plant management projects across Boulder's Open Space &amp; Mountain
+           Parks. Crews work outdoors in all weather, led by experienced
+           rangers.</p>
+        <!-- FIX 8: the original sentence ended "...via the City's career
+             portal: here" — WAVE "suspicious link text". The link text now
+             describes its destination. -->
+        <p>Before registering, please make sure you have
+           <a href="https://bouldercolorado.gov/jobs">submitted your application
+           on the City of Boulder career portal</a>.</p>
+      </section>
+
+      <!-- FIX 4: NEW Physical Ability Required section, using the
+           ADA-approved descriptors specified by City staff. This is the
+           information-architecture gap behind one of the two real user
+           complaints: it is disclosed BEFORE the registration step. -->
+      <section class="block ability-box" aria-labelledby="h-ability">
+        <h2 id="h-ability">Physical Ability Required</h2>
+        <p>This internship involves outdoor physical work. Participants should
+           be able to perform the following, with or without reasonable
+           accommodation:</p>
+        <ul>
+          <li>Bending and squatting for trail and vegetation work</li>
+          <li>Lifting and carrying tools and materials up to 30 lbs</li>
+          <li>Walking on uneven terrain for up to 4 hours</li>
+          <li>Ability to use eyesight to perceive detailed differences
+              (plant identification)</li>
+        </ul>
+        <p>If you need an accommodation to participate, contact the program
+           coordinator using the contact panel on this page.</p>
+      </section>
+
+      <section class="block" aria-labelledby="h-req">
+        <h2 id="h-req">Requirements</h2>
+        <ul>
+          <li>Applicants must be at least 14 and not more than 17 years old by May 1, 2026.</li>
+          <li>Applications must be submitted through the City of Boulder career portal.</li>
+        </ul>
+      </section>
+
+      <section class="block" aria-labelledby="h-details">
+        <h2 id="h-details">Details</h2>
+        <dl class="kv">
+          <dt>Created for</dt><dd>City of Boulder</dd>
+          <dt>Paid</dt><dd>Yes</dd>
+          <dt>Timeframe</dt><dd>June – August 2026</dd>
+          <dt>Credit</dt><dd>Not offered</dd>
+          <dt>Supervisor</dt><dd>Open Space &amp; Mountain Parks staff</dd>
+          <dt>Hiring Manager</dt><dd>Sarah Hosey</dd>
+        </dl>
+      </section>
+    </div>
+
+    <aside class="sidebar" aria-label="Event information">
+      <!-- FIX 9: the Location section on the original page rendered a heading
+           with NOTHING beneath it — valid HTML, invisible to WAVE, and a
+           dead end for anyone judging travel and site access. It is now
+           populated with location, transit, parking, and terrain details. -->
+      <section aria-labelledby="h-loc">
+        <h2 id="h-loc">Location</h2>
+        <address>
+          Open Space &amp; Mountain Parks Hub<br>
+          2520 55th Street, Boulder, Colorado 80301
+        </address>
+        <ul>
+          <li>Accessible parking at the main lot</li>
+          <li>Served by RTD route BOUND</li>
+          <li>Work sites reached by unpaved trails; terrain varies by project</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-contacts">
+        <h2 id="h-contacts">Contacts</h2>
+        <p>Sarah Hosey<br>Volunteer Coordinator</p>
+        <!-- FIX 8 (part b): the Message link now identifies its recipient
+             when read out of context in a screen-reader links list. -->
+        <p><a href="mailto:hoseys@bouldercolorado.gov">Message Sarah Hosey</a></p>
+      </section>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h2>About this site</h2>
+    <p>Volunteer registration and hour tracking for the City of Boulder is
+       powered by GivePulse.</p>
+    <ul>
+      <li><a href="https://www.givepulse.com/">Learn more about GivePulse</a></li>
+      <li><a href="https://support.givepulse.com/hc/en-us">Support Center / FAQ</a></li>
+      <li><a href="https://www.givepulse.com/accessibility">Accessibility Statement</a></li>
+      <li><a href="https://www.givepulse.com/privacy">Privacy Policy</a></li>
+      <li><a href="https://www.givepulse.com/terms">Terms &amp; Conditions</a></li>
+    </ul>
+    <p class="fineprint">© 2026 City of Boulder · Accessible recode by
+       Matthew Aldridge &amp; Jingda Yu for ATLS-CSCI 3150. This page is a
+       student project and is not the live City of Boulder volunteer portal.</p>
+  </div>
+</footer>
+
+</body>
+</html>

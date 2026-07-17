@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- FIX: page-specific, content-first title pattern retained from original (a PASS item) -->
+<title>City of Boulder Volunteer Opportunities | Accessible Recode</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- EXTRA CREDIT: skip navigation link (WebAIM technique) — WCAG 2.4.1 -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a class="logo" href="index.html">City of Boulder Volunteer</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="event.html">Opportunities</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li>
+          <!-- Language switcher keeps its accessible name from the original -->
+          <button type="button" class="lang-btn" aria-label="Switch language | English">EN ▾</button>
+        </li>
+        <li>
+          <!-- FIX 2: Join button label remains readable on keyboard focus.
+               Original defect: :focus turned the label white on a white
+               background (≈1:1). Tab to this button to verify the fix. -->
+          <button type="button" class="btn-join">Join</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+  <div class="hero">
+    <!-- Alternative-text demonstration: the cover image carries a concise,
+         informative alt following the original site's "Cover image for ..."
+         pattern (Draft 1 recorded the pattern as a positive). WCAG 1.1.1 -->
+    <img class="cover" src="img/cover-boulder.svg"
+         alt="Cover image for City of Boulder: volunteers planting in a park below the Flatirons">
+    <h1>City of Boulder</h1>
+    <p>Browse and sign up for volunteer opportunities, events, internships,
+       and public programs offered by the City of Boulder.</p>
+    <!-- FIX 3 (part b): the three group statistics were bare numbers visually
+         styled as headings (3 WAVE "possible heading" alerts). They are now a
+         semantic list where each number is programmatically tied to its label. -->
+    <ul class="stats" aria-label="Group statistics">
+      <li><span class="num">7,032</span> <span class="lbl">volunteers</span></li>
+      <li><span class="num">10,418</span> <span class="lbl">hours logged</span></li>
+      <li><span class="num">144,907</span> <span class="lbl">people impacted</span></li>
+    </ul>
+  </div>
+
+  <!-- FIX 3 (part a): an <h2> now sits between the page <h1> and the card
+       <h3>s, so the heading hierarchy runs h1 > h2 > h3 with no skipped level. -->
+  <h2 id="opportunities">Volunteer Opportunities &amp; Public Programs</h2>
+
+  <div class="search-row">
+    <!-- FIX 6: persistent visible label, programmatically associated.
+         The original field had placeholder-only labelling that vanished
+         on typing. The placeholder is now a supplementary example only. -->
+    <label for="opp-search">Search opportunities</label>
+    <input type="search" id="opp-search" name="q"
+           placeholder="Example: parks, gardening, trail work"
+           aria-describedby="search-hint">
+    <p class="hint" id="search-hint">Search by keyword, then narrow results with the filters below.</p>
+  </div>
+
+  <fieldset class="filters">
+    <legend>Filter results</legend>
+    <div class="filter-grid">
+      <div class="filter">
+        <label for="f-date">Date</label>
+        <select id="f-date"><option>Any date</option><option>This week</option><option>This month</option></select>
+      </div>
+      <div class="filter">
+        <label for="f-type">Type</label>
+        <select id="f-type"><option>All types</option><option>Event</option><option>Volunteer/Service Opportunity</option><option>Internship</option></select>
+      </div>
+      <div class="filter">
+        <label for="f-causes">Causes</label>
+        <select id="f-causes"><option>All causes</option><option>Parks &amp; Open Space</option><option>Arts</option><option>Education</option></select>
+      </div>
+      <div class="filter">
+        <label for="f-skills">Skills</label>
+        <select id="f-skills"><option>All skills</option><option>Gardening</option><option>Teaching</option></select>
+      </div>
+      <div class="filter">
+        <label for="f-age">Age Limit</label>
+        <select id="f-age"><option>Any age</option><option>14–17</option><option>18+</option></select>
+      </div>
+      <!-- FIX 5: NEW physical ability filter, implementing the City's own
+           recommendation, using ADA-approved descriptors. A volunteer with
+           physical limitations no longer has to open ~30 listings one by
+           one to infer feasibility from prose. -->
+      <div class="filter new-filter">
+        <label for="f-ability">Physical Ability
+          <span class="badge">New</span>
+        </label>
+        <select id="f-ability" aria-describedby="ability-hint">
+          <option>Any ability level</option>
+          <option>No specific physical requirements</option>
+          <option>Excludes: bending or squatting</option>
+          <option>Excludes: lifting over 10 lbs</option>
+          <option>Excludes: extended standing or walking</option>
+          <option>Excludes: dexterous use of hands and fingers</option>
+          <option>Excludes: detailed visual perception</option>
+        </select>
+        <p class="hint" id="ability-hint">Show only opportunities that match your physical abilities.</p>
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- FIX: the card grid is now a real list, so screen readers announce
+       "list, 6 items" and users can jump item to item. Each card title is
+       an <h3> under the section <h2>. Cards without photos show a labelled
+       placeholder rather than an empty gray box. -->
+  <ul class="cards">
+    <li class="card">
+      <div class="thumb">No photo provided</div>
+      <div class="body">
+        <h3><a href="event.html">2026 Junior Ranger Program Application</a></h3>
+        <p class="meta">Internship · Open Space &amp; Mountain Parks · Ages 14–17</p>
+        <p class="ability"><strong>Physical ability:</strong> bending, lifting up to 30 lbs, extended outdoor walking</p>
+      </div>
+    </li>
+    <li class="card">
+      <!-- Concise, non-duplicated alt text (Draft 1 flagged long alt text
+           and duplicate alt on adjacent images on the original) -->
+      <img class="thumb-img" src="img/rose-garden.svg"
+           alt="Rose beds beside the Dushanbe Teahouse">
+      <div class="body">
+        <h3><a href="register.html">2026 Rose Gardening at Dushanbe Teahouse</a></h3>
+        <p class="meta">Volunteer/Service Opportunity · Parks &amp; Recreation</p>
+        <p class="ability"><strong>Physical ability:</strong> bending, squatting, dexterous use of hands and fingers</p>
+      </div>
+    </li>
+    <li class="card">
+      <img class="thumb-img" src="img/trail-work.svg"
+           alt="A volunteer repairing a mountain trail">
+      <div class="body">
+        <h3><a href="event.html">Trail Work Wednesdays</a></h3>
+        <p class="meta">Volunteer/Service Opportunity · Open Space &amp; Mountain Parks</p>
+        <p class="ability"><strong>Physical ability:</strong> lifting, extended standing, uneven terrain</p>
+      </div>
+    </li>
+    <li class="card">
+      <div class="thumb">No photo provided</div>
+      <div class="body">
+        <h3><a href="event.html">Weedy Wednesdays</a></h3>
+        <p class="meta">Volunteer/Service Opportunity · Parks &amp; Recreation</p>
+        <p class="ability"><strong>Physical ability:</strong> bending, squatting</p>
+      </div>
+    </li>
+    <li class="card">
+      <div class="thumb">No photo provided</div>
+      <div class="body">
+        <h3><a href="event.html">Wildflower Wednesdays Series</a></h3>
+        <p class="meta">Event · Open Space &amp; Mountain Parks</p>
+        <p class="ability"><strong>Physical ability:</strong> no specific physical requirements</p>
+      </div>
+    </li>
+    <li class="card">
+      <div class="thumb">No photo provided</div>
+      <div class="body">
+        <h3><a href="event.html">Recorridos Guiados por el Arte Público</a></h3>
+        <!-- FIX: element-level lang attribute so screen readers switch
+             pronunciation for the Spanish listing — WCAG 3.1.2 -->
+        <p class="meta" lang="es">Evento · Arte Público de Boulder</p>
+        <p class="ability"><strong>Physical ability:</strong> extended walking (guided tour)</p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Decorative image: null alt (alt=""), correctly removed from the
+       accessibility tree — the pattern WAVE records as a Feature. -->
+  <h2>Recent Impacts<img class="decor" src="img/leaf-decor.svg" alt=""></h2>
+  <!-- Usability fix: testimonials limited to 3 with a disclosure control,
+       instead of ~15 in a dense grid competing with the listings. -->
+  <ul class="cards" id="impacts-list">
+    <li class="card"><div class="body"><h3>Maria G.</h3><p class="meta">Logged 4 hours · Rose Gardening</p><p>"A lovely morning in the gardens — my third year helping."</p></div></li>
+    <li class="card"><div class="body"><h3>Devon P.</h3><p class="meta">Logged 6 hours · Trail Work</p><p>"Great crew, clear instructions, and gloves provided."</p></div></li>
+    <li class="card"><div class="body"><h3>June W.</h3><p class="meta">Logged 3 hours · Art Walk</p><p>"Signing up was quick and the event was well organized."</p></div></li>
+  </ul>
+  <p>
+    <button type="button" class="disclosure" aria-expanded="false" aria-controls="more-impacts">
+      Show more impacts
+    </button>
+  </p>
+  <div id="more-impacts" class="disclosure-region" hidden>
+    <ul class="cards">
+      <li class="card"><div class="body"><h3>Sam R.</h3><p class="meta">Logged 5 hours · Weedy Wednesdays</p><p>"Hard work but worth it — the creek path looks great."</p></div></li>
+      <li class="card"><div class="body"><h3>Alex T.</h3><p class="meta">Logged 2 hours · Wildflower Series</p><p>"Beautiful walk and I learned a lot about native plants."</p></div></li>
+    </ul>
+  </div>
+
+  <h2>GivePulse FAQs</h2>
+  <p>Answers to common questions about creating an account, registering for
+     an opportunity, and logging your hours are in the
+     <a href="https://support.givepulse.com/hc/en-us">GivePulse Support Center</a>
+     and the <a href="event.html">City of Boulder Volunteer Handbook</a>.</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h2>About this site</h2>
+    <p>Volunteer registration and hour tracking for the City of Boulder is
+       powered by GivePulse.</p>
+    <!-- FIX 1: every one of these links was among the 22 contrast failures
+         (white on #8CB8CA, 2.13:1). The footer background is now #245A75,
+         7.52:1 against the white link text. -->
+    <ul>
+      <li><a href="https://www.givepulse.com/">Learn more about GivePulse</a></li>
+      <li><a href="https://support.givepulse.com/hc/en-us">Support Center / FAQ</a></li>
+      <li><a href="https://www.givepulse.com/accessibility">Accessibility Statement</a></li>
+      <li><a href="https://www.givepulse.com/privacy">Privacy Policy</a></li>
+      <li><a href="https://www.givepulse.com/terms">Terms &amp; Conditions</a></li>
+    </ul>
+    <p class="fineprint">© 2026 City of Boulder · Accessible recode by
+       Matthew Aldridge &amp; Jingda Yu for ATLS-CSCI 3150. This page is a
+       student project and is not the live City of Boulder volunteer portal.</p>
+  </div>
+</footer>
+
+<script>
+/* Disclosure pattern for "Show more impacts" — same aria-expanded /
+   aria-controls pattern used to fix the Add Minor button (see register.html). */
+document.querySelectorAll('.disclosure').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var region = document.getElementById(btn.getAttribute('aria-controls'));
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    region.hidden = open;
+  });
+});
+</script>
+
+</body>
+</html>

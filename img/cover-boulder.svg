@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="220" fill="#CDE3EE"/>
+  <circle cx="660" cy="52" r="30" fill="#F5C864"/>
+  <polygon points="0,220 120,90 210,220" fill="#5E7F93"/>
+  <polygon points="140,220 260,60 380,220" fill="#4A6B80"/>
+  <polygon points="300,220 430,95 560,220" fill="#5E7F93"/>
+  <polygon points="118,95 120,90 148,122 128,122" fill="#EDF4F8"/>
+  <polygon points="252,72 260,60 300,105 272,102" fill="#EDF4F8"/>
+  <rect y="170" width="800" height="50" fill="#7FA86B"/>
+  <ellipse cx="120" cy="196" rx="60" ry="14" fill="#6B975A"/>
+  <ellipse cx="520" cy="200" rx="90" ry="16" fill="#6B975A"/>
+  <rect x="596" y="150" width="8" height="34" fill="#7A5C42"/>
+  <circle cx="600" cy="140" r="22" fill="#4F7D46"/>
+  <rect x="676" y="156" width="7" height="28" fill="#7A5C42"/>
+  <circle cx="679" cy="148" r="18" fill="#4F7D46"/>
+  <circle cx="330" cy="176" r="9" fill="#E8B07A"/>
+  <rect x="325" y="184" width="10" height="18" rx="3" fill="#B34747"/>
+  <circle cx="360" cy="172" r="9" fill="#8A5A3B"/>
+  <rect x="355" y="180" width="10" height="20" rx="3" fill="#3F6A8A"/>
+  <rect x="342" y="196" width="34" height="5" rx="2" fill="#7A5C42"/>
+</svg>
