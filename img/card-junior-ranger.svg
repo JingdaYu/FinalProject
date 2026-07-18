@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="jsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9E1EF"/>
+      <stop offset="1" stop-color="#ECF5FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#jsky)"/>
+  <circle cx="130" cy="80" r="34" fill="#F5C864"/>
+  <path d="M120 260 L300 110 L480 260 Z" fill="#4A6B80"/>
+  <path d="M286 128 L300 110 L344 196 L318 202 Z" fill="#EDF4F8"/>
+  <path d="M420 260 L590 140 L760 260 Z" fill="#5E7F93"/>
+  <path d="M0 420 L0 272 Q400 240 800 272 L800 420 Z" fill="#5D8A4E"/>
+  <g fill="#3F6B38">
+    <path d="M640 280 L676 214 L712 280 Z"/><path d="M710 288 L742 232 L774 288 Z"/>
+  </g>
+  <!-- trailhead sign -->
+  <g>
+    <rect x="96" y="296" width="10" height="70" fill="#7A5C42"/>
+    <rect x="66" y="272" width="150" height="40" rx="6" fill="#B98A5F"/>
+    <rect x="80" y="284" width="122" height="7" rx="3" fill="#EADFCB"/>
+    <rect x="80" y="296" width="86" height="7" rx="3" fill="#EADFCB"/>
+  </g>
+  <!-- two junior rangers -->
+  <g>
+    <circle cx="380" cy="316" r="17" fill="#E8B07A"/>
+    <path d="M361 310 a19 11 0 0 1 38 0 Z" fill="#8FBF6C"/>
+    <rect x="362" y="332" width="36" height="44" rx="10" fill="#8FBF6C"/>
+    <rect x="354" y="338" width="9" height="30" rx="4" fill="#E8B07A"/>
+    <rect x="398" y="324" width="7" height="56" fill="#7A5C42"/>
+    <rect x="391" y="318" width="20" height="8" rx="3" fill="#8A8F94"/>
+  </g>
+  <g>
+    <circle cx="470" cy="326" r="16" fill="#8A5A3B"/>
+    <path d="M452 320 a18 10 0 0 1 36 0 Z" fill="#8FBF6C"/>
+    <rect x="453" y="340" width="34" height="42" rx="9" fill="#8FBF6C"/>
+    <rect x="486" y="348" width="30" height="9" rx="4" fill="#7A5C42"/>
+  </g>
+  <path d="M200 420 Q420 396 640 380" fill="none" stroke="#D9C9A8" stroke-width="22" stroke-linecap="round"/>
+  <g fill="#C2506A"><circle cx="180" cy="404" r="5"/><circle cx="700" cy="400" r="5"/></g>
+  <g fill="#F5C864"><circle cx="250" cy="412" r="5"/><circle cx="620" cy="410" r="5"/></g>
+</svg>

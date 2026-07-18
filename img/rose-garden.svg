@@ -1,19 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice">
-  <rect width="400" height="180" fill="#E7F0E2"/>
-  <rect y="130" width="400" height="50" fill="#7FA86B"/>
-  <rect x="30" y="96" width="10" height="44" fill="#4F7D46"/>
-  <circle cx="35" cy="86" r="14" fill="#C2506A"/>
-  <circle cx="35" cy="86" r="7" fill="#D97B90"/>
-  <rect x="110" y="104" width="9" height="36" fill="#4F7D46"/>
-  <circle cx="114" cy="94" r="12" fill="#C2506A"/>
-  <circle cx="114" cy="94" r="6" fill="#D97B90"/>
-  <rect x="190" y="98" width="10" height="42" fill="#4F7D46"/>
-  <circle cx="195" cy="88" r="13" fill="#B34747"/>
-  <circle cx="195" cy="88" r="6" fill="#D97B90"/>
-  <rect x="270" y="106" width="9" height="34" fill="#4F7D46"/>
-  <circle cx="274" cy="96" r="12" fill="#C2506A"/>
-  <circle cx="274" cy="96" r="6" fill="#D97B90"/>
-  <rect x="330" y="60" width="46" height="80" rx="6" fill="#9A7B5B"/>
-  <rect x="338" y="70" width="30" height="26" rx="4" fill="#C9A97F"/>
-  <path d="M340 140 q13 -26 26 0" fill="#6B975A"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="rsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D3E7F2"/>
+      <stop offset="1" stop-color="#EFF6FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#rsky)"/>
+  <circle cx="120" cy="76" r="36" fill="#F5C864"/>
+  <!-- teahouse: patterned facade + layered roof -->
+  <g>
+    <rect x="470" y="150" width="270" height="180" fill="#B98A5F"/>
+    <rect x="470" y="150" width="270" height="14" fill="#8F6A47"/>
+    <path d="M446 150 L605 84 L764 150 Z" fill="#2C6E63"/>
+    <path d="M446 150 Q605 118 764 150 L764 162 Q605 132 446 162 Z" fill="#1F5449"/>
+    <rect x="497" y="188" width="52" height="94" rx="6" fill="#EADFCB"/>
+    <rect x="579" y="188" width="52" height="94" rx="6" fill="#EADFCB"/>
+    <rect x="661" y="188" width="52" height="94" rx="6" fill="#EADFCB"/>
+    <path d="M497 214 h52 M579 214 h52 M661 214 h52" stroke="#B98A5F" stroke-width="5"/>
+    <rect x="560" y="288" width="90" height="42" fill="#7A5C42"/>
+    <rect x="470" y="330" width="270" height="10" fill="#8F6A47"/>
+    <!-- ornament band -->
+    <g fill="#2C6E63">
+      <circle cx="510" cy="172" r="5"/><circle cx="540" cy="172" r="5"/><circle cx="570" cy="172" r="5"/>
+      <circle cx="600" cy="172" r="5"/><circle cx="630" cy="172" r="5"/><circle cx="660" cy="172" r="5"/>
+      <circle cx="690" cy="172" r="5"/><circle cx="720" cy="172" r="5"/>
+    </g>
+  </g>
+  <!-- lawn -->
+  <path d="M0 420 L0 320 Q400 296 800 322 L800 420 Z" fill="#7FA86B"/>
+  <!-- rose beds: three rows -->
+  <g>
+    <path d="M30 352 h300 v34 h-300 Z" fill="#6B4A33"/>
+    <g>
+      <rect x="58" y="306" width="8" height="48" fill="#4F7D46"/>
+      <circle cx="62" cy="296" r="17" fill="#C2506A"/><circle cx="62" cy="296" r="8" fill="#D97B90"/>
+      <rect x="128" y="298" width="8" height="56" fill="#4F7D46"/>
+      <circle cx="132" cy="288" r="18" fill="#B34747"/><circle cx="132" cy="288" r="9" fill="#D97B90"/>
+      <rect x="198" y="304" width="8" height="50" fill="#4F7D46"/>
+      <circle cx="202" cy="294" r="17" fill="#C2506A"/><circle cx="202" cy="294" r="8" fill="#D97B90"/>
+      <rect x="268" y="300" width="8" height="54" fill="#4F7D46"/>
+      <circle cx="272" cy="290" r="18" fill="#D9647E"/><circle cx="272" cy="290" r="9" fill="#EBA0B2"/>
+    </g>
+    <g fill="#5D8A4E">
+      <path d="M66 322 q14 -12 24 2 q-14 10 -24 -2"/>
+      <path d="M206 320 q14 -12 24 2 q-14 10 -24 -2"/>
+    </g>
+  </g>
+  <!-- kneeling gardener with pruners -->
+  <g>
+    <circle cx="392" cy="330" r="15" fill="#E8B07A"/>
+    <path d="M375 324 a17 9 0 0 1 34 0 Z" fill="#D9A441"/>
+    <rect x="377" y="344" width="30" height="30" rx="8" fill="#3F6A8A"/>
+    <rect x="374" y="372" width="36" height="14" rx="6" fill="#2C4F66"/>
+    <rect x="406" y="352" width="20" height="6" rx="3" fill="#8A8F94"/>
+    <rect x="424" y="349" width="8" height="12" rx="2" fill="#B34747"/>
+  </g>
+  <!-- watering can + pot -->
+  <g>
+    <rect x="452" y="366" width="34" height="24" rx="6" fill="#6D8CA0"/>
+    <path d="M452 372 l-14 -8 v6 l14 8 Z" fill="#6D8CA0"/>
+    <circle cx="510" cy="384" r="12" fill="#B3593B"/>
+    <rect x="505" y="368" width="10" height="12" fill="#4F7D46"/>
+    <circle cx="510" cy="364" r="8" fill="#C2506A"/>
+  </g>
 </svg>

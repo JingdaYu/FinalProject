@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C4DFEE"/>
+      <stop offset="1" stop-color="#EAF4F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="440" fill="url(#sky2)"/>
+  <circle cx="260" cy="90" r="46" fill="#F5C864"/>
+  <!-- ridge -->
+  <path d="M0 280 L220 150 L430 280 Z" fill="#5E7F93"/>
+  <path d="M300 280 L560 110 L820 280 Z" fill="#4A6B80"/>
+  <path d="M545 130 L560 110 L610 200 L580 206 Z" fill="#EDF4F8"/>
+  <path d="M760 280 L980 160 L1200 280 Z" fill="#5E7F93"/>
+  <path d="M1100 280 L1340 130 L1600 280 Z" fill="#4A6B80"/>
+  <!-- forest band -->
+  <path d="M0 440 L0 292 Q800 250 1600 292 L1600 440 Z" fill="#5D8A4E"/>
+  <g fill="#3F6B38">
+    <path d="M120 300 L156 236 L192 300 Z"/><path d="M180 306 L216 244 L252 306 Z"/>
+    <path d="M1290 296 L1326 232 L1362 296 Z"/><path d="M1360 302 L1396 240 L1432 302 Z"/>
+    <path d="M1450 296 L1486 236 L1522 296 Z"/>
+  </g>
+  <!-- trail -->
+  <path d="M340 440 Q560 400 800 386 Q1100 370 1260 320" fill="none" stroke="#C9A97F" stroke-width="34" stroke-linecap="round"/>
+  <path d="M340 440 Q560 400 800 386 Q1100 370 1260 320" fill="none" stroke="#D9C9A8" stroke-width="22" stroke-linecap="round"/>
+  <!-- ranger crew -->
+  <g transform="translate(0,-46)">
+  <g>
+    <circle cx="700" cy="336" r="16" fill="#E8B07A"/>
+    <path d="M682 330 a18 10 0 0 1 36 0 Z" fill="#8FBF6C"/>
+    <rect x="684" y="350" width="32" height="40" rx="9" fill="#8FBF6C"/>
+    <rect x="676" y="356" width="8" height="26" rx="3" fill="#E8B07A"/>
+    <rect x="716" y="344" width="6" height="44" fill="#7A5C42"/>
+    <rect x="710" y="338" width="18" height="8" rx="3" fill="#8A8F94"/>
+  </g>
+  <g>
+    <circle cx="790" cy="348" r="16" fill="#8A5A3B"/>
+    <path d="M772 342 a18 10 0 0 1 36 0 Z" fill="#8FBF6C"/>
+    <rect x="774" y="362" width="32" height="40" rx="9" fill="#8FBF6C"/>
+    <rect x="806" y="368" width="30" height="9" rx="4" fill="#7A5C42"/>
+  </g>
+  <g>
+    <circle cx="880" cy="342" r="14" fill="#D99C6B"/>
+    <path d="M864 336 a16 9 0 0 1 32 0 Z" fill="#8FBF6C"/>
+    <rect x="866" y="354" width="28" height="36" rx="8" fill="#3F6A8A"/>
+  </g>
+  </g>
+  <!-- boulders -->
+  <ellipse cx="1180" cy="404" rx="46" ry="24" fill="#8A8F94"/>
+  <ellipse cx="1230" cy="416" rx="30" ry="17" fill="#A2A7AC"/>
+  <g fill="#C2506A"><circle cx="480" cy="416" r="6"/><circle cx="1420" cy="412" r="6"/></g>
+  <g fill="#F5C864"><circle cx="560" cy="428" r="6"/><circle cx="1500" cy="424" r="6"/></g>
+</svg>

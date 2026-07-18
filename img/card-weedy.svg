@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="wsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D3E7F2"/>
+      <stop offset="1" stop-color="#F0F7FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#wsky)"/>
+  <circle cx="672" cy="72" r="34" fill="#F5C864"/>
+  <path d="M0 240 Q200 200 420 226 Q640 250 800 224 L800 420 L0 420 Z" fill="#7FA86B"/>
+  <path d="M0 420 L0 320 Q400 292 800 320 L800 420 Z" fill="#6B975A"/>
+  <!-- creek -->
+  <path d="M560 420 Q600 360 700 330 Q760 314 800 316 L800 360 Q740 358 690 376 Q630 396 610 420 Z" fill="#9CC3D9"/>
+  <!-- kneeling volunteer pulling weeds -->
+  <g>
+    <circle cx="300" cy="272" r="17" fill="#D99C6B"/>
+    <path d="M281 266 a19 11 0 0 1 38 0 Z" fill="#D9A441"/>
+    <rect x="282" y="288" width="36" height="34" rx="9" fill="#B34747"/>
+    <rect x="278" y="318" width="44" height="16" rx="7" fill="#7C2F2F"/>
+    <rect x="316" y="296" width="26" height="8" rx="4" fill="#D99C6B"/>
+  </g>
+  <!-- weeds being pulled -->
+  <g stroke="#4F7D46" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M360 330 q4 -22 -4 -38"/>
+    <path d="M372 332 q10 -20 4 -40"/>
+    <path d="M384 334 q14 -16 12 -36"/>
+  </g>
+  <g stroke="#8FA83B" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M120 330 q4 -18 -2 -30"/><path d="M132 332 q8 -16 4 -32"/>
+    <path d="M480 344 q4 -18 -2 -30"/><path d="M492 346 q8 -16 4 -32"/>
+  </g>
+  <!-- wheelbarrow of weeds -->
+  <g>
+    <path d="M540 300 h74 l-12 30 h-50 Z" fill="#3F6A8A"/>
+    <circle cx="577" cy="340" r="12" fill="#2C4F66"/>
+    <rect x="612" y="304" width="30" height="7" rx="3" transform="rotate(16 612 304)" fill="#7A5C42"/>
+    <g stroke="#5D8A4E" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M556 298 q2 -14 -4 -22"/><path d="M572 296 q6 -14 0 -24"/><path d="M588 296 q8 -12 6 -22"/>
+    </g>
+  </g>
+  <!-- gloves and trowel -->
+  <rect x="190" y="352" width="30" height="16" rx="7" fill="#E8A33D"/>
+  <rect x="228" y="356" width="26" height="6" rx="3" fill="#8A8F94"/>
+  <g fill="#F5C864"><circle cx="86" cy="376" r="6"/><circle cx="720" cy="392" r="6"/></g>
+  <g fill="#C2506A"><circle cx="150" cy="392" r="6"/><circle cx="440" cy="388" r="6"/></g>
+</svg>
